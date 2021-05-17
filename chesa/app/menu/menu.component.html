@@ -1,0 +1,56 @@
+
+<!-- <a [routerLink]="['first']">First</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]="['second']">Second</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]="['event']">event</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]="['calc']">cal</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+
+<body>
+
+    
+    <h1>ANGULAR <sub>@shahul</sub></h1>
+    <h2>    <p><b><i>MENU</i></b></p>
+    </h2>
+    <header>
+          <div class="container">
+            <nav>
+              <ul>
+              <li><a [routerLink]="['/menu',{outlets: {'data': ['first']}}]"> First</a> </li> 
+                <li><a [routerLink]="['/menu',{outlets: {'data': ['event']}}]"> event</a></li>
+                <li><a [routerLink]="['/menu',{outlets: {'data': ['calc']}}]"> calc</a></li>
+                <!-- <li><a [routerLink]="['/menu',{outlets: {'data': ['three']}}]"> three</a></li>    -->
+                <li><a [routerLink]="['/menu',{outlets: {'data': ['employ-show']}}]"> employ-show</a>  </li>
+                <li><a [routerLink]="['/menu',{outlets: {'data': ['student-show']}}]"> student-show</a> </li>
+                <li><a [routerLink]="['/menu',{outlets: {'data': ['twoway']}}]"> two way</a> </li>
+                <li><a [routerLink]="['/menu',{outlets: {'data': ['customershow']}}]"> customershow</a></li>
+                <li><a [routerLink]="['/menu',{outlets: {'data': ['databind']}}]"> databind</a> </li>
+                <li><a [routerLink]="['/menu',{outlets: {'data': ['second']}}]"> second</a> </li>
+
+                
+              </ul>
+            </nav>
+          </div>
+        </header>
+
+<!-- <a [routerLink]="['/menu',{outlets: {'data': ['first']}}]"> First</a> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]="['/menu',{outlets: {'data': ['second']}}]"> Second</a> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]="['/menu',{outlets: {'data': ['event']}}]"> event</a> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]="['/menu',{outlets: {'data': ['calc']}}]"> calc</a> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]="['/menu',{outlets: {'data': ['three']}}]"> three</a> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]="['/menu',{outlets: {'data': ['employ-show']}}]"> employ-show</a> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]="['/menu',{outlets: {'data': ['student-show']}}]"> student-show</a> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]="['/menu',{outlets: {'data': ['twoway']}}]"> two way</a> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]="['/menu',{outlets: {'data': ['databind']}}]"> databind</a> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]="['/menu',{outlets: {'data': ['customershow']}}]"> customershow</a> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<hr/> -->
+<hr/>
+<router-outlet name="data"></router-outlet>

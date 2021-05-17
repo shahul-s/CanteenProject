@@ -1,0 +1,16 @@
+<p>customershow works!</p>
+<table>
+    <tr>
+      <th>id</th>
+      <th>Name</th>
+      <th>product</th>
+      <th>cost</th>
+      <th>discount</th>
+    </tr>
+    <tr *ngFor="let e of customers">
+        <td> {{e.id}}</td>
+        <td> {{e.name}}</td>
+        <td> {{e.product}}</td>
+        <td> {{e.cost}}</td>
+    </tr>
+  </table>
